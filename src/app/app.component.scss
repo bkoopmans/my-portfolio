@@ -1,0 +1,62 @@
+.app-component {
+    background-color: #a7a7a7;
+    font-size: 16px;
+    a {
+        text-decoration: none;
+    }
+
+    .app-header {
+        background-color: #6e3506;
+        padding-bottom: 24px;
+        .container {
+            padding: 0;
+        }
+        .name {
+            color: #ffffff;
+            font-size: 32px;
+        }
+        .links {
+            a {
+                color: #6e3506;
+                &:hover {
+                    color: steelblue;
+                }
+            }
+            
+            text-align: right;
+            
+            span {
+                background-color: #a7a7a7;
+                padding: 12px;
+                border-radius: 2px;
+                font-size: 16px;
+                margin-bottom: 12px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .content {
+        
+        .container {
+            background-color: #c9c9c9;
+            min-height: 400px;
+        }
+    }
+
+    .app-footer {
+        background-color: #151583;
+        height: 72px;
+        .links {
+            padding-top: 24px;
+            text-align: center;
+            a {
+                color: #ffffff;
+                padding: 0 12px;
+                border-right: #ffffff solid 1px;
+                
+            }
+            
+        }
+    }
+}
