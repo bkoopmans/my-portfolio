@@ -1,12 +1,15 @@
 .app-component {
     background-color: #a7a7a7;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     a {
         text-decoration: none;
     }
 
     .app-header {
-        background-color: #6e3506;
+        background-color: #d66100;
         padding-bottom: 24px;
         .container {
             padding: 0;
@@ -14,10 +17,11 @@
         .name {
             color: #ffffff;
             font-size: 32px;
+            margin-top: 24px;
         }
         .links {
             a {
-                color: #6e3506;
+                color: white;
                 &:hover {
                     color: steelblue;
                 }
@@ -37,7 +41,10 @@
     }
 
     .content {
-        
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+
         .container {
             background-color: #c9c9c9;
             min-height: 400px;
@@ -53,10 +60,10 @@
             a {
                 color: #ffffff;
                 padding: 0 12px;
-                border-right: #ffffff solid 1px;
-                
+                &:not(:last-child) {
+                    border-right: #ffffff solid 1px;
+                }
             }
-            
         }
     }
 }
