@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ResumeModule } from './modules/resume/resume.module';
 import { DivingModule } from './modules/diving/diving.module';
 import { IfAdventureModule } from './modules/if-adventure/if-adventure.module';
+import { DecoderModule } from './modules/decoder/decoder.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { IfAdventureModule } from './modules/if-adventure/if-adventure.module';
     AppRoutingModule,
     ResumeModule,
     DivingModule,
-    IfAdventureModule
+    IfAdventureModule,
+    DecoderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
